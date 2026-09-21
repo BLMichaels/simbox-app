@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download SimBox — Offline App</title>
+  <meta name="description" content="Download the SimBox offline app for Mac, Windows, or Linux, plus the Cases pack." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <img class="brand-logo" src="./assets/simbox-logo.png" alt="SimBox+" width="220" height="44" />
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow">Offline app</p>
+    <h1>Download SimBox</h1>
+    <p class="lede">
+      Install the app for your computer, then download the Cases pack once.
+      Simulations run fully offline after setup.
+    </p>
+    <p class="version" id="version-line">Checking latest build…</p>
+  </main>
+
+  <section class="downloads" aria-label="Downloads">
+    <article class="card" id="card-mac">
+      <h2>Mac</h2>
+      <p>Apple Silicon (.dmg). Right-click → Open if macOS blocks the first launch.</p>
+      <a class="btn" id="btn-mac" href="./files/SimBox-mac.dmg" download>Download for Mac</a>
+      <p class="meta" id="meta-mac"></p>
+    </article>
+
+    <article class="card" id="card-mac-intel" hidden>
+      <h2>Mac (Intel)</h2>
+      <p>For older Intel Macs.</p>
+      <a class="btn" id="btn-mac-intel" href="./files/SimBox-mac-intel.dmg" download>Download for Mac (Intel)</a>
+      <p class="meta" id="meta-mac-intel"></p>
+    </article>
+
+    <article class="card" id="card-windows">
+      <h2>Windows</h2>
+      <p>Installer (.exe). If SmartScreen appears, choose More info → Run anyway.</p>
+      <a class="btn" id="btn-windows" href="./files/SimBox-windows.exe" download>Download for Windows</a>
+      <p class="meta" id="meta-windows"></p>
+    </article>
+
+    <article class="card" id="card-linux" hidden>
+      <h2>Linux</h2>
+      <p>AppImage. Run <code>chmod +x</code> on the file before opening.</p>
+      <a class="btn" id="btn-linux" href="./files/SimBox-linux.AppImage" download>Download for Linux</a>
+      <p class="meta" id="meta-linux"></p>
+    </article>
+
+    <article class="card card-cases" id="card-cases">
+      <h2>Cases pack</h2>
+      <p>Required once for all platforms. In SimBox, choose this ZIP when asked to install cases.</p>
+      <a class="btn btn-secondary" id="btn-cases" href="./files/SimBox-Cases.zip" download>Download Cases pack</a>
+      <p class="meta" id="meta-cases"></p>
+    </article>
+  </section>
+
+  <section class="howto">
+    <h2>Setup</h2>
+    <ol>
+      <li>Download the app for your computer (Mac or Windows above).</li>
+      <li>Download the Cases pack ZIP.</li>
+      <li>Open SimBox and choose the Cases pack when prompted.</li>
+      <li>Pick a case and run the simulation offline.</li>
+    </ol>
+  </section>
+
+  <footer class="foot">
+    <p>
+      Direct links for Wix (stable filenames — they keep working when the app is updated):
+    </p>
+    <ul class="direct-links">
+      <li>Mac: <code id="url-mac">./files/SimBox-mac.dmg</code></li>
+      <li>Windows: <code id="url-windows">./files/SimBox-windows.exe</code></li>
+      <li>Cases: <code id="url-cases">./files/SimBox-Cases.zip</code></li>
+    </ul>
+    <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
