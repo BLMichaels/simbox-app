@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Download SimBox — Offline App</title>
-  <meta name="description" content="Download the SimBox offline app for Mac, Windows, or Linux, plus the Cases pack." />
+  <meta name="description" content="Download the SimBox offline app for Mac or Windows. Cases download inside the app." />
   <!-- Bump ?v= when styles.css or app.js changes, so browsers don't serve stale assets. -->
-  <link rel="stylesheet" href="./styles.css?v=8" />
+  <link rel="stylesheet" href="./styles.css?v=9" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -19,8 +19,8 @@
     <p class="eyebrow">Offline app</p>
     <h1>Download SimBox</h1>
     <p class="lede">
-      Install the app for your computer, then download the Cases pack once.
-      Simulations run fully offline after setup.
+      Install the app for your computer, then pick your cases inside SimBox.
+      Simulations run fully offline once a case is installed.
     </p>
     <p class="version" id="version-line">Checking latest build…</p>
   </main>
@@ -72,16 +72,6 @@
       <p class="meta" id="meta-linux"></p>
     </article>
 
-    <article class="card card-cases" id="card-cases">
-      <h2>Cases pack <span class="card-tag">optional</span></h2>
-      <p>
-        You do not normally need this. SimBox downloads cases for you from its built-in
-        library. Use this single ZIP of every case only for a computer that will never have
-        internet — copy it across on a USB stick.
-      </p>
-      <a class="btn btn-secondary" id="btn-cases" href="./files/SimBox-Cases.zip" download>Download all cases (large)</a>
-      <p class="meta" id="meta-cases"></p>
-    </article>
   </section>
 
   <section class="howto">
@@ -199,11 +189,10 @@
     <ul class="direct-links">
       <li>Mac: <code id="url-mac">./files/SimBox-mac.pkg</code></li>
       <li>Windows: <code id="url-windows">./files/SimBox-windows.exe</code></li>
-      <li>Cases: <code id="url-cases">./files/SimBox-Cases.zip</code></li>
     </ul>
     <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
   </footer>
 
-  <script src="./app.js?v=8"></script>
+  <script src="./app.js?v=9"></script>
 </body>
 </html>
