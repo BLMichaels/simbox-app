@@ -6,7 +6,7 @@
   <title>Download SimBox — Offline App</title>
   <meta name="description" content="Download the SimBox offline app for Mac, Windows, or Linux, plus the Cases pack." />
   <!-- Bump ?v= when styles.css or app.js changes, so browsers don't serve stale assets. -->
-  <link rel="stylesheet" href="./styles.css?v=7" />
+  <link rel="stylesheet" href="./styles.css?v=8" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -73,9 +73,13 @@
     </article>
 
     <article class="card card-cases" id="card-cases">
-      <h2>Cases pack</h2>
-      <p>Required once for all platforms. In SimBox, choose this ZIP when asked to install cases.</p>
-      <a class="btn btn-secondary" id="btn-cases" href="./files/SimBox-Cases.zip" download>Download Cases pack</a>
+      <h2>Cases pack <span class="card-tag">optional</span></h2>
+      <p>
+        You do not normally need this. SimBox downloads cases for you from its built-in
+        library. Use this single ZIP of every case only for a computer that will never have
+        internet — copy it across on a USB stick.
+      </p>
+      <a class="btn btn-secondary" id="btn-cases" href="./files/SimBox-Cases.zip" download>Download all cases (large)</a>
       <p class="meta" id="meta-cases"></p>
     </article>
   </section>
@@ -83,11 +87,18 @@
   <section class="howto">
     <h2>Setup</h2>
     <ol>
-      <li>Download the app for your computer (Mac or Windows above).</li>
-      <li>Download the Cases pack ZIP.</li>
-      <li>Open SimBox and choose the Cases pack when prompted.</li>
-      <li>Pick a case and run the simulation offline.</li>
+      <li>Download the app for your computer (Mac or Windows above) and install it.</li>
+      <li>Open SimBox. It starts on the <strong>case library</strong>.</li>
+      <li>
+        Click <strong>Download</strong> next to any case you want — Bronchiolitis, DKA, Scald
+        Burn, and so on. Each one installs itself in about a minute.
+      </li>
+      <li>Click <strong>Open case</strong> and run the simulation. It works offline from then on.</li>
     </ol>
+    <p class="note">
+      You only download the cases you actually teach, and SimBox tells you when a case has been
+      updated or a new one is published.
+    </p>
 
     <h2 id="mac-install">Installing on Mac</h2>
     <p class="note">
@@ -193,6 +204,6 @@
     <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
   </footer>
 
-  <script src="./app.js?v=7"></script>
+  <script src="./app.js?v=8"></script>
 </body>
 </html>
