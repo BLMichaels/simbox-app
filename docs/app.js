@@ -1,7 +1,8 @@
 (function () {
   const slots = {
     mac: {
-      card: 'card-mac',
+      // Both Mac downloads share one card, so toggle the individual rows.
+      card: 'option-mac',
       btn: 'btn-mac',
       meta: 'meta-mac',
       url: 'url-mac',
@@ -9,7 +10,7 @@
       label: 'Mac',
     },
     macDmg: {
-      card: 'card-mac-dmg',
+      card: 'option-mac-dmg',
       btn: 'btn-mac-dmg',
       meta: 'meta-mac-dmg',
       file: 'SimBox-mac.dmg',
