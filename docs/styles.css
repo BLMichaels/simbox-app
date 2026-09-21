@@ -203,6 +203,11 @@ body {
   opacity: 0.85;
 }
 
+.option-note a {
+  color: var(--accent);
+  text-decoration-color: rgba(79, 189, 244, 0.5);
+}
+
 .btn-secondary {
   background: transparent;
   color: var(--ink);
