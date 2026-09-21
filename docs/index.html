@@ -27,16 +27,27 @@
   <section class="downloads" aria-label="Downloads">
     <article class="card" id="card-mac">
       <h2>Mac</h2>
-      <p>Guided installer for Apple Silicon. Sets up SimBox and approves it with macOS, so it opens with no security warnings.</p>
-      <a class="btn" id="btn-mac" href="./files/SimBox-mac.pkg" download>Download for Mac</a>
-      <p class="meta" id="meta-mac"></p>
-    </article>
+      <p>Apple Silicon. Choose the guided installer unless you have a reason not to.</p>
 
-    <article class="card" id="card-mac-dmg" hidden>
-      <h2>Mac (manual)</h2>
-      <p>Drag-to-Applications disk image. Needs manual approval in Privacy &amp; Security — only use if the installer above fails.</p>
-      <a class="btn btn-secondary" id="btn-mac-dmg" href="./files/SimBox-mac.dmg" download>Download .dmg instead</a>
-      <p class="meta" id="meta-mac-dmg"></p>
+      <div class="options">
+        <div class="option" id="option-mac">
+          <a class="btn" id="btn-mac" href="./files/SimBox-mac.pkg" download>Download for Mac</a>
+          <div class="option-text">
+            <span class="option-label">Guided install (recommended)</span>
+            <span class="option-note">Sets up SimBox and approves it with macOS, so it opens with no security warnings.</span>
+            <span class="option-meta" id="meta-mac"></span>
+          </div>
+        </div>
+
+        <div class="option" id="option-mac-dmg" hidden>
+          <a class="btn btn-secondary" id="btn-mac-dmg" href="./files/SimBox-mac.dmg" download>Download .dmg</a>
+          <div class="option-text">
+            <span class="option-label">Manual install</span>
+            <span class="option-note">Drag to Applications yourself, then approve the app in Privacy &amp; Security. Use only if the installer fails.</span>
+            <span class="option-meta" id="meta-mac-dmg"></span>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article class="card" id="card-mac-intel" hidden>
