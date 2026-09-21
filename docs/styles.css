@@ -185,6 +185,28 @@ body {
   margin-bottom: 0.45rem;
 }
 
+.howto h2 + .note {
+  margin-top: 0;
+}
+
+.howto .note {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.howto code {
+  padding: 0.1rem 0.35rem;
+  border-radius: 5px;
+  background: rgba(79, 189, 244, 0.1);
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.howto strong {
+  color: var(--ink);
+}
+
 .foot {
   padding: 0 clamp(1.25rem, 4vw, 3rem) 3rem;
   color: var(--muted);
