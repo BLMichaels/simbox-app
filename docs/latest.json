@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-21T04:36:30.421Z",
+  "updatedAt": "2026-09-21T05:43:46.415Z",
   "downloadBase": "https://github.com/BLMichaels/simbox-app/releases/latest/download",
   "stableNames": {
     "mac": "SimBox-mac.pkg",
@@ -13,12 +13,12 @@
   "files": {
     "mac": {
       "source": "SimBox-1.0.0-arm64.pkg",
-      "size": 98407848,
+      "size": 98419142,
       "path": "files/SimBox-mac.pkg"
     },
     "macDmg": {
       "source": "SimBox-1.0.0-arm64.dmg",
-      "size": 98397039,
+      "size": 98391342,
       "path": "files/SimBox-mac.dmg"
     },
     "cases": {
