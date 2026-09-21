@@ -41,14 +41,6 @@
       label: 'Linux',
       optional: true,
     },
-    cases: {
-      card: 'card-cases',
-      btn: 'btn-cases',
-      meta: 'meta-cases',
-      url: 'url-cases',
-      file: 'SimBox-Cases.zip',
-      label: 'Cases pack',
-    },
   };
 
   function formatBytes(n) {
