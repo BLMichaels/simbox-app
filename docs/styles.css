@@ -263,6 +263,110 @@ body {
   color: var(--ink);
 }
 
+/* Numbered walkthrough for the one-time macOS security prompt. */
+.walkthrough {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.walkthrough > li {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-left: 2.75rem;
+  counter-increment: step;
+}
+
+.walkthrough > li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid rgba(79, 189, 244, 0.5);
+  border-radius: 50%;
+  background: rgba(79, 189, 244, 0.14);
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.walkthrough h3 {
+  margin: 0.15rem 0 0.4rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.walkthrough p {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.walkthrough .careful {
+  color: var(--warn);
+  font-weight: 600;
+}
+
+.walkthrough .hint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Mimics the System Settings row so users recognize what to look for. */
+.settings-mock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.55rem 0 0.7rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(232, 238, 243, 0.05);
+}
+
+.settings-mock-text {
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.settings-mock-btn {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(143, 163, 179, 0.45);
+  border-radius: 7px;
+  background: rgba(143, 163, 179, 0.16);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.fallback {
+  margin: 1.25rem 0 0;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.fallback summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.fallback p {
+  margin: 0.65rem 0 0;
+}
+
 .foot {
   padding: 0 clamp(1.25rem, 4vw, 3rem) 3rem;
   color: var(--muted);
