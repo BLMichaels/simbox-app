@@ -6,7 +6,7 @@
   <title>Download SimBox — Offline App</title>
   <meta name="description" content="Download the SimBox offline app for Mac, Windows, or Linux, plus the Cases pack." />
   <!-- Bump ?v= when styles.css or app.js changes, so browsers don't serve stale assets. -->
-  <link rel="stylesheet" href="./styles.css?v=3" />
+  <link rel="stylesheet" href="./styles.css?v=4" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -35,7 +35,7 @@
           <a class="btn" id="btn-mac" href="./files/SimBox-mac.pkg" download>Download for Mac</a>
           <div class="option-text">
             <span class="option-label">Guided install (recommended)</span>
-            <span class="option-note">Sets up SimBox and approves it with macOS, so it opens with no security warnings.</span>
+            <span class="option-note">Installs SimBox and pre-approves the app, so it opens cleanly afterwards. macOS asks you to allow the installer once — see <a href="#mac-install">Installing on Mac</a>.</span>
             <span class="option-meta" id="meta-mac"></span>
           </div>
         </div>
@@ -89,20 +89,30 @@
       <li>Pick a case and run the simulation offline.</li>
     </ol>
 
-    <h2>Installing on Mac</h2>
+    <h2 id="mac-install">Installing on Mac</h2>
     <ol>
-      <li>Open the downloaded <code>SimBox-mac.pkg</code>.</li>
+      <li>Double-click the downloaded <code>SimBox-mac.pkg</code>.</li>
       <li>
-        macOS will say it is from an unidentified developer, because SimBox is not
-        registered with Apple. <strong>Right-click (or Control-click) the file and choose Open</strong>
-        to continue.
+        macOS blocks it with <strong>&ldquo;SimBox-mac.pkg&rdquo; Not Opened</strong>, because SimBox
+        is not registered with Apple. Click <strong>Done</strong> — do <strong>not</strong> click
+        Move to Trash.
       </li>
-      <li>Follow the installer, entering your password when asked.</li>
-      <li>Open SimBox from Applications — the installer already approved it, so there are no further warnings.</li>
+      <li>
+        Open <strong>System Settings</strong> &rarr; <strong>Privacy &amp; Security</strong>, scroll
+        down to the <strong>Security</strong> section, and click <strong>Open Anyway</strong> next to
+        <code>SimBox-mac.pkg</code>.
+      </li>
+      <li>Follow the installer, entering your Mac password when asked.</li>
+      <li>Open SimBox from Applications — the installer already approved the app, so there are no further warnings.</li>
     </ol>
     <p class="note">
-      The installer needs your password because it installs into Applications and
-      approves the app with macOS on your behalf.
+      The <strong>Open Anyway</strong> button only appears for a short while after macOS blocks the
+      file. If you don&rsquo;t see it, double-click the pkg again, then go back to Privacy &amp; Security.
+    </p>
+    <p class="note">
+      Still blocked? Open <strong>Terminal</strong>, paste the line below, press Return, then
+      double-click the pkg again:<br />
+      <code>xattr -d com.apple.quarantine ~/Downloads/SimBox-mac.pkg</code>
     </p>
 
     <h2>First launch on Windows</h2>
@@ -124,6 +134,6 @@
     <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
   </footer>
 
-  <script src="./app.js?v=3"></script>
+  <script src="./app.js?v=4"></script>
 </body>
 </html>
