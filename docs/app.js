@@ -5,8 +5,16 @@
       btn: 'btn-mac',
       meta: 'meta-mac',
       url: 'url-mac',
-      file: 'SimBox-mac.dmg',
+      file: 'SimBox-mac.pkg',
       label: 'Mac',
+    },
+    macDmg: {
+      card: 'card-mac-dmg',
+      btn: 'btn-mac-dmg',
+      meta: 'meta-mac-dmg',
+      file: 'SimBox-mac.dmg',
+      label: 'Mac (manual)',
+      optional: true,
     },
     macIntel: {
       card: 'card-mac-intel',
