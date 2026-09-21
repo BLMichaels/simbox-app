@@ -27,7 +27,7 @@
   <section class="downloads" aria-label="Downloads">
     <article class="card" id="card-mac">
       <h2>Mac</h2>
-      <p>Apple Silicon (.dmg). Right-click → Open if macOS blocks the first launch.</p>
+      <p>Apple Silicon (.dmg). macOS asks you to approve the first launch — see below.</p>
       <a class="btn" id="btn-mac" href="./files/SimBox-mac.dmg" download>Download for Mac</a>
       <p class="meta" id="meta-mac"></p>
     </article>
@@ -68,6 +68,29 @@
       <li>Download the Cases pack ZIP.</li>
       <li>Open SimBox and choose the Cases pack when prompted.</li>
       <li>Pick a case and run the simulation offline.</li>
+    </ol>
+
+    <h2>First launch on Mac</h2>
+    <p class="note">
+      SimBox is not registered with Apple yet, so macOS asks for your approval the
+      first time only.
+    </p>
+    <ol>
+      <li>Open the downloaded <code>SimBox-mac.dmg</code> and drag <strong>SimBox</strong> into Applications.</li>
+      <li>Open SimBox from Applications. macOS will say it cannot verify the developer.</li>
+      <li>Go to <strong>System Settings → Privacy &amp; Security</strong>, scroll down, and click <strong>Open Anyway</strong>.</li>
+      <li>Confirm with Touch ID or your password. SimBox opens normally from then on.</li>
+    </ol>
+    <p class="note">
+      Prefer the terminal? Run
+      <code>xattr -dr com.apple.quarantine /Applications/SimBox.app</code>
+      and it will open with no prompt.
+    </p>
+
+    <h2>First launch on Windows</h2>
+    <ol>
+      <li>Run the downloaded installer.</li>
+      <li>If SmartScreen appears, click <strong>More info</strong> → <strong>Run anyway</strong>.</li>
     </ol>
   </section>
 
