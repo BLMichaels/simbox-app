@@ -1,0 +1,211 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-09-21T05:27:26.310Z",
+  "downloadBase": "https://github.com/BLMichaels/simbox-app/releases/latest/download",
+  "cases": [
+    {
+      "id": "SimBox_Abdominal_Trauma",
+      "name": "Abdominal Trauma",
+      "title": "Abdominal Trauma",
+      "category": "ed",
+      "objectives": [
+        "Apply a systematic approach for evaluation of a pediatric trauma patient.",
+        "Prioritize appropriate interventions for identified injuries in a pediatric trauma patient.",
+        "Determine the appropriate destination for transfer."
+      ],
+      "posted": "January 2022",
+      "revised": "December 2025",
+      "zip": "SimBox-Case-Abdominal-Trauma.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Abdominal-Trauma.zip",
+      "size": 16496863,
+      "sha256": "6e58eaa05f4872b53ae6f888e006bc5cf29c43ef3ce361ec1e808c1af9150518"
+    },
+    {
+      "id": "SimBox_Asthma",
+      "name": "Asthma",
+      "title": "A Child with a Wheeze (Asthma)",
+      "category": "ed",
+      "objectives": [
+        "Apply Crisis Resource Management and teamwork in a pediatric resuscitation (with attention to role designation, directed orders, sharing mental model and closed loop communication with team and family members).",
+        "Prioritize treatment of potential etiologies to guide stabilization or escalation of care for a pediatric patient with status asthmaticus.",
+        "Determine the appropriate patient disposition/transfer."
+      ],
+      "posted": "April 2023",
+      "revised": null,
+      "zip": "SimBox-Case-Asthma.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Asthma.zip",
+      "size": 13920097,
+      "sha256": "af44de9d3363575176b5aad0e07b2c04aa9524bc5a8001ac898e61b8dc778252"
+    },
+    {
+      "id": "SimBox_Bronchiolitis",
+      "name": "Bronchiolitis",
+      "title": "Infant with Respiratory Distress (Bronchiolitis)",
+      "category": "ed",
+      "objectives": [
+        "Demonstrate a systematic assessment of a critically ill pediatric patient in your Emergency Department.",
+        "Demonstrate the interventions required for an infant with respiratory distress.",
+        "Determine the appropriate disposition/destination for transfer."
+      ],
+      "posted": "May 2020",
+      "revised": "January 2024",
+      "zip": "SimBox-Case-Bronchiolitis.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Bronchiolitis.zip",
+      "size": 43593541,
+      "sha256": "9331871f8c14a4fb9d4116863ce90704e56207b56fef616772d47209706f97a6"
+    },
+    {
+      "id": "SimBox_DKA",
+      "name": "DKA",
+      "title": "Diabetic Ketoacidosis (DKA)",
+      "category": "ed",
+      "objectives": [
+        "Perform and evaluate the appropriate diagnostic tests to recognize diabetic ketoacidosis.",
+        "Initiate evidence-based therapies for diabetic ketoacidosis.",
+        "Determine the appropriate destination for transfer."
+      ],
+      "posted": "September 2025",
+      "revised": null,
+      "zip": "SimBox-Case-DKA.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-DKA.zip",
+      "size": 18670948,
+      "sha256": "f43b124890547430409fdff3d298e70327632ec27283aa43c0338d5acd83c1dd"
+    },
+    {
+      "id": "SimBox_Pediatric_Cardiac_Codes",
+      "name": "Pediatric Cardiac Codes",
+      "title": "Pediatric Cardiac Codes",
+      "category": "ed",
+      "objectives": [
+        "Apply Crisis Resource Management and teamwork during pediatric cardiac emergency care.",
+        "Prioritize assessment and interventions for a critically ill pediatric patient.",
+        "Determine the appropriate disposition and next steps in care."
+      ],
+      "posted": null,
+      "revised": null,
+      "zip": "SimBox-Case-Pediatric-Cardiac-Codes.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Pediatric-Cardiac-Codes.zip",
+      "size": 71878442,
+      "sha256": "73b6d9603173ddf8f0a548659c7cbf8d7040408d5357db2c2ada8279ec0787c3"
+    },
+    {
+      "id": "SimBox_Penetrating_Trauma",
+      "name": "Penetrating Trauma",
+      "title": "Penetrating Trauma",
+      "category": "ed",
+      "objectives": [
+        "Perform a structured Pediatric Trauma Primary Survey.",
+        "Assess and manage external Hemorrhage Control.",
+        "Recognize signs/symptoms of a Tension Pneumothorax."
+      ],
+      "posted": "June 2026",
+      "revised": null,
+      "zip": "SimBox-Case-Penetrating-Trauma.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Penetrating-Trauma.zip",
+      "size": 19051174,
+      "sha256": "017a182baf6ff5fbd27df321f616ecc97b63ef7a5f38ab90774766f1dac77228"
+    },
+    {
+      "id": "SimBox_Postpartum_Complication",
+      "name": "Postpartum Complication",
+      "title": "A Postpartum Complication",
+      "category": "ed",
+      "objectives": [
+        "Apply Crisis Resource Management and teamwork in the care of a patient, with attention to role designation, directed orders, shared mental model and closed loop communication.",
+        "Prioritize treatment of potential etiologies to stabilize the patient or escalate care.",
+        "Determine the appropriate destination for transfer."
+      ],
+      "posted": "November 2022",
+      "revised": null,
+      "zip": "SimBox-Case-Postpartum-Complication.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Postpartum-Complication.zip",
+      "size": 53413311,
+      "sha256": "0c1c968963df0bd00a85e0bbe7287cce9aa827eb1e7558606cf430a2a59eedcb"
+    },
+    {
+      "id": "SimBox_Scald_Burn",
+      "name": "Scald Burn",
+      "title": "Scald Burn",
+      "category": "ed",
+      "objectives": [
+        "Apply Crisis Resource Management and teamwork in a pediatric resuscitation (with attention to role designation, directed orders, sharing mental model and closed loop communication with team and family members).",
+        "Prioritize treatment of potential etiologies to guide stabilization or escalation of care for a pediatric patient.",
+        "Determine the appropriate destination for transfer."
+      ],
+      "posted": "December 2023",
+      "revised": null,
+      "zip": "SimBox-Case-Scald-Burn.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Scald-Burn.zip",
+      "size": 114751232,
+      "sha256": "554ef4e42cdee0f348dc7a78427bab0ad63d6dbdfebe7b3841afbecd90d71799"
+    },
+    {
+      "id": "SimBox_Suicide_Risk_Assessment",
+      "name": "Suicide Risk Assessment",
+      "title": "Suicide Risk Assessment",
+      "category": "ed",
+      "objectives": [
+        "Introduce and explain the suicide risk assessment tool while maintaining support and emotional safety.",
+        "Navigate barriers to completing the suicide risk assessment tool.",
+        "Accurately identify level of risk through an evidence-based suicide risk assessment."
+      ],
+      "posted": "June 2026",
+      "revised": null,
+      "zip": "SimBox-Case-Suicide-Risk-Assessment.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Suicide-Risk-Assessment.zip",
+      "size": 68299268,
+      "sha256": "2db56ad03eb625d2dd3273c4a70fb507bbc402b80f2387799ed221b5b7be0746"
+    },
+    {
+      "id": "SimBox_Suicide_Screen_Nursing",
+      "name": "Suicide Screen Nursing",
+      "title": "Suicide Screen - Nursing",
+      "category": "ed",
+      "objectives": [
+        "Communicate using evidence-based language for why we screen for suicide and how to execute the screening.",
+        "Navigate barriers to completing the suicide screening tool.",
+        "Recognize a positive screening and identify appropriate interventions."
+      ],
+      "posted": "June 2026",
+      "revised": null,
+      "zip": "SimBox-Case-Suicide-Screen-Nursing.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Suicide-Screen-Nursing.zip",
+      "size": 23249828,
+      "sha256": "c65982b989d9a121443152bc97084e81d867fc9a809b87e1dcafbe68570e8337"
+    },
+    {
+      "id": "SimBox_Trach",
+      "name": "Trach",
+      "title": "Pediatric Tracheostomy Emergency",
+      "category": "ed",
+      "objectives": [
+        "Present tracheostomy malfunction as a source of respiratory distress.",
+        "Decide appropriate interventions for patient and clearly demonstrate treatment steps for tracheostomy emergency.",
+        "Evaluate effectiveness of interventions and determine next appropriate steps in care."
+      ],
+      "posted": "September 2025",
+      "revised": null,
+      "zip": "SimBox-Case-Trach.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Trach.zip",
+      "size": 83056838,
+      "sha256": "a9d4215ce231e2023e41f4d8a5399764293be2ae458bce476f161b2a87c76361"
+    },
+    {
+      "id": "SimBox_Vomiting_Baby",
+      "name": "Vomiting Baby",
+      "title": "A Vomiting Baby (Non-Accidental Trauma)",
+      "category": "ed",
+      "objectives": [
+        "Prioritize treatment of potential etiologies to guide stabilization or escalation of care for an infant with vomiting.",
+        "Identify non-accidental trauma and activate local protocol for reporting.",
+        "Determine the appropriate destination for transfer."
+      ],
+      "posted": "December 2021",
+      "revised": "September 2025",
+      "zip": "SimBox-Case-Vomiting-Baby.zip",
+      "url": "https://github.com/BLMichaels/simbox-app/releases/latest/download/SimBox-Case-Vomiting-Baby.zip",
+      "size": 46822579,
+      "sha256": "920763f63b1aaff8ca7e3bdf7b7ceb8cd6f96ad9e6af40e89e3d2d75ce25f1d2"
+    }
+  ]
+}
