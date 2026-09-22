@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimBox — Case Library</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0b1218" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="library.css" />
+  <script src="pwa-boot.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="SimBox+ home">
+      <img class="brand-logo" src="simbox-logo.png" alt="SimBox+" width="220" height="44" />
+    </a>
+    <a class="lib-header-link" href="index.html" id="picker-link">My cases</a>
+  </header>
+
+  <main class="hero">
+    <h1>Case library</h1>
+    <p class="lede">
+      Pick a case and click <strong>Download</strong>. It installs itself and is ready to run
+      with your learners — no files to find.
+    </p>
+  </main>
+
+  <section class="cases" aria-label="Case library">
+    <div class="lib-updates" id="update-banner" hidden>
+      <div>
+        <p class="lib-updates-title" id="update-title"></p>
+        <p class="lib-updates-text" id="update-text"></p>
+      </div>
+      <button type="button" class="btn-primary" id="update-all-btn">Update all</button>
+    </div>
+
+    <p class="lib-status" id="library-status" role="status" aria-live="polite">Loading cases…</p>
+
+    <div class="section-toggle" role="tablist" aria-label="Case section">
+      <button
+        type="button"
+        class="section-tab is-active"
+        role="tab"
+        id="tab-ed"
+        aria-selected="true"
+        aria-controls="library-grid"
+        data-section="ed"
+      >
+        Emergency Department
+      </button>
+      <button
+        type="button"
+        class="section-tab"
+        role="tab"
+        id="tab-ems"
+        aria-selected="false"
+        aria-controls="library-grid"
+        data-section="ems"
+      >
+        EMS
+      </button>
+    </div>
+
+    <div class="cases-toolbar">
+      <label class="search-wrap">
+        <span class="sr-only">Search cases</span>
+        <input id="search" type="search" placeholder="Filter cases…" autocomplete="off" />
+      </label>
+      <p class="count" id="case-count"></p>
+    </div>
+
+    <div class="lib-offline" id="library-offline" hidden>
+      <p class="lib-offline-title">SimBox can’t reach the case library</p>
+      <p class="lib-offline-text" id="library-offline-text">
+        This usually means the computer is offline. Connect to the internet, then try again.
+      </p>
+      <button type="button" class="btn-primary" id="retry-btn">Try again</button>
+      <p class="lib-offline-detail" id="library-offline-detail" hidden></p>
+    </div>
+
+    <div class="grid" id="library-grid"></div>
+
+    <p class="lib-empty" id="empty" hidden>No cases match that search.</p>
+
+    <div class="lib-settings">
+      <label class="lib-toggle">
+        <input type="checkbox" id="auto-check" />
+        <span>Check for new and updated cases automatically</span>
+      </label>
+      <button type="button" class="lib-check-now" id="check-now-btn">Check now</button>
+      <span class="lib-checked" id="last-checked"></span>
+    </div>
+  </section>
+
+  <script src="library.js"></script>
+</body>
+</html>
