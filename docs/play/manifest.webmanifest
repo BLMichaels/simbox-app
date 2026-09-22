@@ -1,0 +1,18 @@
+{
+  "name": "SimBox",
+  "short_name": "SimBox",
+  "description": "Offline medical simulation cases for Chromebook and the web",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1218",
+  "theme_color": "#0b1218",
+  "icons": [
+    {
+      "src": "./simbox-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
