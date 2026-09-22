@@ -6,7 +6,7 @@
   <title>Download SimBox — Offline App</title>
   <meta name="description" content="Download the SimBox offline app for Mac or Windows. Cases download inside the app." />
   <!-- Bump ?v= when styles.css or app.js changes, so browsers don't serve stale assets. -->
-  <link rel="stylesheet" href="./styles.css?v=9" />
+  <link rel="stylesheet" href="./styles.css?v=10" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -60,7 +60,10 @@
 
     <article class="card" id="card-windows">
       <h2>Windows</h2>
-      <p>Installer (.exe). If SmartScreen appears, choose More info → Run anyway.</p>
+      <p>
+        Installer for Windows PCs (.exe). If SmartScreen appears, choose More info → Run anyway.
+        Chromebooks cannot install this — use a Windows or Mac computer.
+      </p>
       <a class="btn" id="btn-windows" href="./files/SimBox-windows.exe" download>Download for Windows</a>
       <p class="meta" id="meta-windows"></p>
     </article>
@@ -177,9 +180,15 @@
 
     <h2>First launch on Windows</h2>
     <ol>
-      <li>Run the downloaded installer.</li>
-      <li>If SmartScreen appears, click <strong>More info</strong> → <strong>Run anyway</strong>.</li>
+      <li>Download <code>SimBox-windows.exe</code> and double-click it.</li>
+      <li>If Windows shows a blue SmartScreen warning, click <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+      <li>Click through the installer, then open <strong>SimBox</strong> from the Start menu or desktop shortcut.</li>
+      <li>In the case library, click <strong>Download</strong> next to any case you want to teach.</li>
     </ol>
+    <p class="note">
+      Chromebooks cannot run the Windows or Mac installers. Facilitators on Chromebooks need a
+      Windows PC or a Mac for the offline app.
+    </p>
   </section>
 
   <footer class="foot">
@@ -193,6 +202,6 @@
     <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
   </footer>
 
-  <script src="./app.js?v=9"></script>
+  <script src="./app.js?v=10"></script>
 </body>
 </html>
