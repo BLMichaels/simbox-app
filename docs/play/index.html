@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimBox — Cases</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0b1218" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="home.css" />
+  <script src="pwa-boot.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="SimBox+ home">
+      <img class="brand-logo" src="simbox-logo.png" alt="SimBox+" width="220" height="44" />
+    </a>
+    <p class="status" id="server-status" hidden>Connecting…</p>
+  </header>
+
+  <main class="hero">
+    <h1>Choose a case</h1>
+    <p class="lede">Launch a medical simulation on this computer.</p>
+  </main>
+
+  <div class="updates-banner" id="updates-banner" hidden>
+    <div>
+      <p class="updates-banner-title" id="updates-banner-title"></p>
+      <p class="updates-banner-text" id="updates-banner-text"></p>
+    </div>
+    <a class="updates-banner-btn" href="library.html">Open case library</a>
+  </div>
+
+  <section class="cases" aria-label="Available cases">
+    <div class="section-toggle" role="tablist" aria-label="Case section">
+      <button
+        type="button"
+        class="section-tab is-active"
+        role="tab"
+        id="tab-ed"
+        aria-selected="true"
+        aria-controls="case-panel"
+        data-section="ed"
+      >
+        Emergency Department
+      </button>
+      <button
+        type="button"
+        class="section-tab"
+        role="tab"
+        id="tab-ems"
+        aria-selected="false"
+        aria-controls="case-panel"
+        data-section="ems"
+      >
+        EMS
+      </button>
+    </div>
+
+    <div class="cases-toolbar">
+      <label class="search-wrap">
+        <span class="sr-only">Search cases</span>
+        <input id="search" type="search" placeholder="Filter cases…" autocomplete="off" />
+      </label>
+      <p class="count" id="case-count"></p>
+    </div>
+
+    <div id="case-panel" role="tabpanel" aria-labelledby="tab-ed">
+      <div id="coming-soon" class="coming-soon" hidden>
+        <p class="coming-soon-badge">Coming Soon</p>
+        <h2>EMS cases are on the way</h2>
+        <p>We’re building EMS simulations next. Check back here once they’re added—or switch to Emergency Department to run available cases now.</p>
+      </div>
+      <div id="case-grid" class="grid" role="list"></div>
+      <p id="empty" class="empty" hidden></p>
+    </div>
+  </section>
+
+  <footer class="foot" id="app-footer">
+    <p class="desktop-only" id="cases-manage" hidden>
+      <a href="library.html">Add or update cases</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <button type="button" class="linkish" id="check-updates-btn">Check for updates</button>
+    </p>
+    <p class="mobile-only" id="mobile-footer" hidden>
+      Mobile server: <code id="ws-url"></code>
+    </p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
