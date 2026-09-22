@@ -1,0 +1,355 @@
+/* Buttons for the library screens. The case landing pages have their own
+   light-theme .btn-primary in landing.css, which this never loads alongside. */
+.btn-primary,
+.btn-secondary {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #061018;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #6ecaf7;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: rgba(143, 163, 179, 0.5);
+}
+
+.btn-primary:disabled,
+.btn-secondary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.lib-header-link {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lib-header-link:hover {
+  color: var(--ink);
+  border-color: rgba(143, 163, 179, 0.5);
+}
+
+.lib-status {
+  min-height: 1.4rem;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.lib-status[data-state="ok"] {
+  color: var(--ok);
+}
+
+.lib-status[data-state="warn"] {
+  color: var(--warn);
+}
+
+.lib-status[data-state="error"] {
+  color: #f07178;
+}
+
+.lib-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(18, 28, 36, 0.72);
+  animation: rise 0.55s ease both;
+}
+
+.lib-card.is-installed {
+  border-color: rgba(61, 207, 142, 0.4);
+}
+
+.lib-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.lib-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.lib-badge {
+  flex: 0 0 auto;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(61, 207, 142, 0.5);
+  background: rgba(61, 207, 142, 0.15);
+  color: var(--ok);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lib-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.lib-objectives {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+/* Objectives vary wildly in length; clamp them so the grid stays even. */
+.lib-objectives li {
+  margin-bottom: 0.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lib-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+.lib-size {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lib-actions .btn-primary,
+.lib-actions .btn-secondary {
+  padding: 0.55rem 1rem;
+  font-size: 0.92rem;
+}
+
+.lib-remove {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(143, 163, 179, 0.4);
+}
+
+.lib-remove:hover {
+  color: #f07178;
+}
+
+.lib-progress[hidden] {
+  display: none;
+}
+
+.lib-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(143, 163, 179, 0.2);
+  overflow: hidden;
+}
+
+.lib-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+.lib-progress-text {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.lib-progress-text[data-state="error"] {
+  color: #f07178;
+}
+
+.lib-empty {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+}
+
+.lib-empty[hidden] {
+  display: none;
+}
+
+.lib-updates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid rgba(79, 189, 244, 0.45);
+  border-radius: var(--radius);
+  background: linear-gradient(
+    135deg,
+    rgba(79, 189, 244, 0.14),
+    rgba(18, 28, 36, 0.6)
+  );
+  animation: rise 0.55s ease both;
+}
+
+.lib-updates[hidden] {
+  display: none !important;
+}
+
+.lib-updates-title {
+  margin: 0 0 0.2rem;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.lib-updates-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.lib-badge.is-update {
+  border-color: rgba(79, 189, 244, 0.55);
+  background: rgba(79, 189, 244, 0.16);
+  color: var(--accent);
+}
+
+.lib-revised {
+  color: var(--muted);
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+/* Quiet footer row: the grid above it is the focus of this page. */
+.lib-settings {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  margin: 2.75rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.lib-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.lib-toggle input {
+  width: 0.95rem;
+  height: 0.95rem;
+  accent-color: var(--accent);
+  flex: 0 0 auto;
+}
+
+.lib-check-now {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.lib-check-now:disabled {
+  color: var(--muted);
+  cursor: default;
+}
+
+.lib-checked {
+  margin-left: auto;
+  opacity: 0.75;
+}
+
+.lib-offline {
+  margin: 1.5rem 0 0;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(244, 128, 128, 0.4);
+  border-radius: var(--radius);
+  background: rgba(60, 26, 30, 0.45);
+  max-width: 34rem;
+}
+
+.lib-offline-title {
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.lib-offline-text {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.lib-offline-detail {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  opacity: 0.6;
+  word-break: break-word;
+}
