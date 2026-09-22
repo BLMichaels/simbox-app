@@ -334,18 +334,23 @@
     } catch (_err) {
       /* ignore */
     }
-    // Bundled Cloudflare Worker (deploy workers/case-cors-proxy.js).
+    // Prefer the live Cloudflare proxy first (GitHub release assets block browser CORS).
     proxies.push('https://simbox-case-proxy.jet-stop.workers.dev/?u=');
-    proxies.push('https://simbox-case-proxy.blmichaels.workers.dev/?u=');
-    proxies.push(new URL('api/proxy-case?u=', BASE).href);
+    if (window.SIMBOX_CASE_PROXY) proxies.unshift(window.SIMBOX_CASE_PROXY);
+    // Same-origin Express proxy when the PWA is served from the Node desktop server.
+    if (!/github\.io$/i.test(location.hostname)) {
+      proxies.push(new URL('api/proxy-case?u=', BASE).href);
+    }
 
-    const attempts = [{ label: 'direct', href: url }];
+    const attempts = [];
     proxies.forEach((p) => {
-      const href = p.includes('=') && p.endsWith('=')
-        ? p + encodeURIComponent(url)
-        : `${p}${p.includes('?') ? '&' : '?'}u=${encodeURIComponent(url)}`;
+      const href =
+        p.includes('=') && /[?&]u=$/.test(p)
+          ? p + encodeURIComponent(url)
+          : `${p}${p.includes('?') ? '&' : '?'}u=${encodeURIComponent(url)}`;
       attempts.push({ label: 'proxy', href });
     });
+    attempts.push({ label: 'direct', href: url });
 
     let lastError = null;
     for (const attempt of attempts) {
