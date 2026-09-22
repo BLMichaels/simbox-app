@@ -558,6 +558,8 @@
         'sw.js',
         'manifest.webmanifest',
         'simbox-logo.png',
+        'icon-192.png',
+        'icon-512.png',
         'vendor/fflate.js',
         'fonts/fonts.css',
       ].map((p) => new URL(p, BASE).href);
