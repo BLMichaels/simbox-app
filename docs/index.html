@@ -6,7 +6,7 @@
   <title>Download SimBox — Offline App</title>
   <meta name="description" content="Download the SimBox offline app for Mac or Windows. Cases download inside the app." />
   <!-- Bump ?v= when styles.css or app.js changes, so browsers don't serve stale assets. -->
-  <link rel="stylesheet" href="./styles.css?v=10" />
+  <link rel="stylesheet" href="./styles.css?v=11" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -62,10 +62,19 @@
       <h2>Windows</h2>
       <p>
         Installer for Windows PCs (.exe). If SmartScreen appears, choose More info → Run anyway.
-        Chromebooks cannot install this — use a Windows or Mac computer.
       </p>
       <a class="btn" id="btn-windows" href="./files/SimBox-windows.exe" download>Download for Windows</a>
       <p class="meta" id="meta-windows"></p>
+    </article>
+
+    <article class="card" id="card-chromeos">
+      <h2>Chromebook</h2>
+      <p>
+        Opens in Chrome — no installer. Download cases once, then run them offline.
+        On Chromebook: Chrome menu → <strong>Install SimBox</strong> to pin it like an app.
+      </p>
+      <a class="btn" id="btn-chromeos" href="https://blmichaels.github.io/simbox-app/play/">Open SimBox for Chromebook</a>
+      <p class="meta">Web app · works offline after cases are downloaded</p>
     </article>
 
     <article class="card" id="card-linux" hidden>
@@ -80,7 +89,7 @@
   <section class="howto">
     <h2>Setup</h2>
     <ol>
-      <li>Download the app for your computer (Mac or Windows above) and install it.</li>
+      <li>Download the app for your computer (Mac, Windows, or Chromebook above) and open it.</li>
       <li>Open SimBox. It starts on the <strong>case library</strong>.</li>
       <li>
         Click <strong>Download</strong> next to any case you want — Bronchiolitis, DKA, Scald
@@ -92,6 +101,17 @@
       You only download the cases you actually teach, and SimBox tells you when a case has been
       updated or a new one is published.
     </p>
+
+    <h2 id="chromebook">Using SimBox on a Chromebook</h2>
+    <ol>
+      <li>Open <a href="https://blmichaels.github.io/simbox-app/play/">SimBox for Chromebook</a> in Chrome.</li>
+      <li>
+        Optional but recommended: open the Chrome menu (⋮) and choose
+        <strong>Install SimBox</strong> / <strong>Save and open as window</strong> so it feels like an app.
+      </li>
+      <li>Click <strong>Download</strong> next to each case you teach. Wait until it says Installed.</li>
+      <li>After that you can open those cases with no internet connection.</li>
+    </ol>
 
     <h2 id="mac-install">Installing on Mac</h2>
     <p class="note">
@@ -186,8 +206,7 @@
       <li>In the case library, click <strong>Download</strong> next to any case you want to teach.</li>
     </ol>
     <p class="note">
-      Chromebooks cannot run the Windows or Mac installers. Facilitators on Chromebooks need a
-      Windows PC or a Mac for the offline app.
+      Chromebooks should use the <a href="#chromebook">Chromebook</a> option above, not the Windows installer.
     </p>
   </section>
 
@@ -202,6 +221,6 @@
     <p class="muted">Hosted download page for emergencysimbox.com/offline-app</p>
   </footer>
 
-  <script src="./app.js?v=10"></script>
+  <script src="./app.js?v=11"></script>
 </body>
 </html>
